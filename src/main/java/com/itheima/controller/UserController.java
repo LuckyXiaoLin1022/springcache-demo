@@ -40,6 +40,7 @@ public class UserController {
     @Cacheable(cacheNames = "userCache",key = "#id")
     public User getById(Long id){
         User user = userMapper.getById(id);
+        System.out.println("sdad");
         return user;
     }
 
